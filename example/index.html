@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <div id="flavour1" style="float: left; width: 200px; height: 200px; margin-right: 50px;"></div>
+    <div id="flavour2" style="float: left; width: 200px; height: 200px;"></div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
+    <script type="text/javascript" src="../dist/d3-flavour.js"></script>
+    <script type="text/javascript">
+        var objData = {
+            'Sour'   : 1,
+            'Bitter' : 2,
+            'Malty'  : 5,
+            'Hoppy'  : 2,
+            'Citrusy': 4,
+            'Floral' : 3,
+            'Smooth' : 0,
+            'Sweet'  : 2
+        };
+        var arrData = [0,0,0,0,0];
+        d3_flavour.chart('flavour1', d3_flavour.transformData(objData));
+        d3_flavour.chart('flavour2', arrData, {
+            depth: 10,
+            flavours: ['Salty', 'Sweet', 'Sour', 'Bitter', 'Umami'],
+            thickness: 0.08,
+            callback: function(newData) { console.log(newData); }
+        });
+    </script>
+</body>
+</html>

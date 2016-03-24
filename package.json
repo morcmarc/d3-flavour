@@ -1,0 +1,27 @@
+{
+  "name": "d3-flavour",
+  "version": "1.0.0",
+  "description": "D3 module for charting \"flavour wheels\"",
+  "main": "index.js",
+  "scripts": {
+    "test" : "jest",
+    "build": "webpack",
+    "dist" : "NODE_ENV=prod webpack",
+    "dev"  : "python -m SimpleHTTPServer"
+  },
+  "author": "Marcell Jusztin <hello@morcmarc.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core"          : "^6.7.0",
+    "babel-jest"          : "^9.0.2",
+    "babel-loader"        : "^6.2.4",
+    "babel-polyfill"      : "^6.6.1",
+    "babel-preset-es2015" : "^6.6.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "d3"                  : "^3.5.16",
+    "jest-cli"            : "^0.9.1",
+    "svg.js"              : "^2.0.0",
+    "webpack"             : "^1.12.14",
+    "webpack-dev-server"  : "^1.14.1"
+  }
+}
